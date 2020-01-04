@@ -71,10 +71,10 @@ function submitOrder(){
 
 //目标时间
 	var dDate = new Date();  //10点和22点开抢
-	if( dDate.getHours() < 20 ){
-		dDate.setHours(19,59,59.2);
+	if( dDate.getHours() < 8 ){
+		dDate.setHours(7,59,59.2);
 	}else{
-		dDate.setHours(19,59,59.6);
+		dDate.setHours(19,59,59.2);
 	}
 	
 	//dDate.setSeconds( dDate.getSeconds() + 10 );
